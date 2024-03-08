@@ -6,11 +6,11 @@
 /*   By: hibenouk <hibenouk@1337.ma>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 14:15:16 by hibenouk          #+#    #+#             */
-/*   Updated: 2024/03/07 15:33:46 by hibenouk         ###   ########.fr       */
+/*   Updated: 2024/03/08 22:46:57 by zkotbi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minishell.h"
+#include "../include/minishell.h"
 
 void error(const char *name)
 {
