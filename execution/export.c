@@ -6,7 +6,7 @@
 /*   By: zkotbi <student.h42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/08 22:24:23 by zkotbi            #+#    #+#             */
-/*   Updated: 2024/03/08 23:19:23 by zkotbi           ###   ########.fr       */
+/*   Updated: 2024/03/08 23:31:01 by zkotbi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void export_var(t_env	*env, char *name)
 	
 	tmp = env->back->prev;
 	env->back->prev = malloc(sizeof(t_lst));
-	check_null(env->back->prev, "malloc");
+	// check_null(env->back->prev, "malloc");
 	env->back->prev->varible = name;
 	env->back->prev->next = env->back;
 	env->back->prev->prev = tmp;

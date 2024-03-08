@@ -6,7 +6,7 @@
 /*   By: zkotbi <student.h42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/08 23:03:05 by zkotbi            #+#    #+#             */
-/*   Updated: 2024/03/08 23:17:26 by zkotbi           ###   ########.fr       */
+/*   Updated: 2024/03/08 23:57:26 by zkotbi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,7 @@ int main()
 	printf("-------------%ld-------------\n", env->size);
 	export_var(env, "test6");
 	printf("-------------%ld-------------\n", env->size);
+	env = unset(env, "test2");
 	tmp = env->front;
 	while (i < env->size)
 	{
@@ -76,5 +77,6 @@ int main()
 		tmp = tmp->next;
 		i++;
 	}
+	printf("-------------%ld-------------\n", env->size);
 	printf("to_find ---> %s\n", env_search(env, "world")->varible);
 }
