@@ -6,7 +6,7 @@
 /*   By: zkotbi <student.h42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/08 23:03:05 by zkotbi            #+#    #+#             */
-/*   Updated: 2024/03/08 23:57:26 by zkotbi           ###   ########.fr       */
+/*   Updated: 2024/03/09 18:34:21 by zkotbi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ t_lst	*env_search(t_env	*env, char *name)
 		i = 0;
 		while (tmp->varible[i] == name[i] && name[i] != 0)
 			i++;
-		if (name[i] == 0)
+		if (name[i] == 0 && tmp->varible[i] == '=')
 			return (tmp);
 		tmp = tmp->next;
 	}
